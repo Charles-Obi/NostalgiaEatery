@@ -1,0 +1,110 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+	 <!-- Specials Section -->
+    <section id="specials" class="specials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Specials</h2>
+        <p>Check Our Specials</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Chicken Biryani</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Kuku Paka</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Pilau</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Samaki wa Nazi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Ndizi Nyama</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="specials-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Chicken Biryani</h3>
+                    <p>
+                         A flavorful and aromatic rice dish made by layering spiced chicken with fragrant basmati rice, caramelized onions, and a blend of rich spices like cardamom, cloves, and turmeric. Slow-cooked to perfection, this dish is often served with raita or kachumbari, making it a popular choice for festive occasions and special meals.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/biryani.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Kuku Paka</h3>
+                    <p>
+                         A delicious Swahili dish of grilled or stewed chicken cooked in a rich and creamy coconut milk sauce. Flavored with turmeric, garlic, ginger, and chili, it offers a perfect balance of spice and creaminess. Commonly served with rice, chapati, or naan, it's a coastal favorite known for its bold and comforting flavors.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/kukupaka.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pilau</h3>
+                    <p>
+                         A fragrant and spiced rice dish popular in Swahili cuisine. Cooked with aromatic spices like cardamom, cinnamon, cloves, and cumin, it is often paired with meat, chicken, or vegetables. Known for its rich flavors and inviting aroma, pilau is a favorite for celebrations and communal meals.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/pilau.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Samaki wa Nazi</h3>
+                    <p>
+                        A flavorful Swahili dish featuring fish cooked in a creamy coconut milk sauce. Enhanced with spices like turmeric, garlic, and ginger, it is often served with rice, chapati, or ugali. This coastal delicacy is celebrated for its rich, aromatic, and comforting taste.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/samakinazi.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ndizi Nyama</h3>
+                   <p>
+                       A hearty Swahili dish combining green bananas (plantains) and meat, usually beef or goat, cooked in a flavorful coconut milk sauce. The dish is rich, creamy, and filling, often served with rice or chapati. It’s a beloved comfort food on the Swahili coast.
+                   </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/ndizinyama.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Specials Section -->
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Menu</h2>
+        <p>Check Our Tasty Menu</p>
+      </div><!-- End Section Title -->
+
+      <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul class="menu-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-starters">Starters</li>
+              <li data-filter=".filter-salads">Salads</li>
+              <li data-filter=".filter-specialty">Specialty</li>
+            </ul>
+          </div>
+        </div><!-- Menu Filters -->
+
+        <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item isotope-item filter-starters">
+            <img src="{% static 'assets/img/menu/viazikarai.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Viazi Karai</a><span>$5.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Deep-fried potato slices coated with a turmeric-flavored batter, served with tangy tamarind or coconut chutney.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+            <img src="{% static 'assets/img/menu/kukupaka.jpeg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Kuku Paka</a><span>$6.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled or stewed chicken cooked in a creamy coconut milk sauce infused with turmeric, garlic, and chili.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-starters">
+            <img src="{% static 'assets/img/menu/kaimati.jpeg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Kaimati</a><span>$7.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Sweet, crispy dough balls coated in sugar syrup—an excellent small bite to start the meal.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-salads">
+            <img src="{% static 'assets/img/menu/kachumbari.jpeg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Kachumbari</a><span>$8.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A classic Swahili salad made with diced tomatoes, onions, cilantro, and sometimes cucumber, dressed with lemon juice, salt, and a touch of chili for spice
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+            <img src="{% static 'assets/img/menu/walinazi.jpeg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Wali wa Nazi</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Coconut rice, a popular accompaniment to Swahili dishes, cooked with fresh coconut milk for a rich, creamy flavor.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-starters">
+            <img src="{% static 'assets/img/menu/mkatenyama.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mkate wa Nyama (Meat Bread)</a><span>$4.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A savory pastry filled with spiced minced meat, offering a soft yet rich flavor profile.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-salads">
+            <img src="{% static 'assets/img/menu/nazisalad.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Saladi ya Nazi (Coconut Salad)</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A creamy salad featuring grated fresh coconut mixed with thinly sliced vegetables like carrots, cucumbers, and onions, often flavored with lime juice and mild spices.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-salads">
+            <img src="{% static 'assets/img/menu/fruitsalad.jpg' %} " class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Saladi ya Maembe Mabichi (Green Mango Salad)</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Julienned unripe mango mixed with grated carrots, chili, lime juice, and a pinch of salt for a tangy, spicy salad.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+            <img src="{% static 'assets/img/menu/pwezanazi.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Pweza wa Nazi</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Octopus cooked in a flavorful coconut sauce, a coastal delicacy that highlights Swahili culinary traditions.
+            </div>
+          </div><!-- Menu Item -->
+
+        </div><!-- Menu Container -->
+
+      </div>
+
+    </section><!-- /Menu Section -->
+
+{% endblock %}

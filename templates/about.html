@@ -1,0 +1,37 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid about-img" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Our Mission</h3>
+            <p class="fst-italic">
+                Welcome to NostalgiaEatery, where great food meets unforgettable experiences. Our mission is to bring people together through exceptional cuisine, warm hospitality, and a welcoming atmosphere as well as embrace and appreciate culture of the coastal communities.
+            </p>
+              <p>
+                  At NostalgiaEatery we pride ourselves on offering:
+              </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Authentic Recipes: Our menu blends traditional flavors with modern culinary techniques to create a truly unique dining experience.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>A Passion for Service: From the moment you walk through our doors, our team is dedicated to making your visit memorable.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Fresh Ingredients: Every dish is crafted with the finest, freshest ingredients to ensure flavor and quality.</span></li>
+            </ul>
+            <p>
+                Whether you’re here for a quick meal, a family gathering, or a celebration, NostalgiaEatery got you covered.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+{% endblock %}
