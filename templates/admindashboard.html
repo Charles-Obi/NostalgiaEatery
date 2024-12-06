@@ -1,0 +1,16 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+    <br><br><br>
+	<h3 style="text-align: center">
+    {{ manager.username }},You're logged in as an admin!
+    </h3>
+
+    <br><br><br>
+    <div class="container">
+    <div class="justify-content-center align-items-center">
+        <a href="{% url 'Admin' %}" class="btn btn-success">View Orders</a>
+    </div>
+    </div>
+{% endblock %}

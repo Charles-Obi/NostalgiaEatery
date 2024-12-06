@@ -68,29 +68,14 @@
             <li><a href="{% url 'events' %}">Events</a></li>
             <li><a href="{% url 'chefs' %}">Chefs</a></li>
             <li><a href="{% url 'gallery' %}">Gallery</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
             <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'order' %}">Order</a></li>
+              <li><a href="{% url 'login' %}">Admin</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Book a Table</a>
+        <a class="btn-book-a-table d-none d-xl-block" href="{% url 'booking' %}">Book a Table</a>
 
       </div>
 
@@ -103,7 +88,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="{% static 'assets/img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
+      <img src="{% static 'assets/img/f1.jpg' %}" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -111,8 +96,8 @@
             <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>NostalgiaEatery</span></h2>
             <p data-aos="fade-up" data-aos-delay="200">Home for great swahili dishes!</p>
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-              <a href="#menu" class="cta-btn">Our Menu</a>
-              <a href="#book-a-table" class="cta-btn">Book a Table</a>
+              <a href="{% url 'menu' %}" class="cta-btn">Our Menu</a>
+              <a href="{% url 'booking' %}" class="cta-btn">Book a Table</a>
             </div>
           </div>
         </div>
@@ -165,56 +150,6 @@
 
     </section><!-- /Why Us Section -->
 
-
-    <!-- Book A Table Section -->
-    <section id="book-a-table" class="book-a-table section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>RESERVATION</h2>
-        <p>Book a Table</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
-            </div>
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-          </div>
-
-          <div class="text-center mt-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-            <button type="submit">Book a Table</button>
-          </div>
-        </form><!-- End Reservation Form -->
-
-      </div>
-
-    </section><!-- /Book A Table Section -->
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
@@ -261,8 +196,8 @@
                 <span>"Every bite was a journey of flavors. The freshness and creativity in the dishes are unmatched. Can’t wait to come back!"</span>
                 <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
+                <img src="{% static 'assets/img/testimonials/tsuma.jpg' %}" class="testimonial-img" alt="">
+                <h3>Charles Tsuma</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
             </div><!-- End testimonial item -->
@@ -274,9 +209,9 @@
                   <span>"The ambiance is warm and welcoming, the staff is incredibly attentive, and the food is simply divine. Highly recommend the signature dishes!"</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <img src="{% static 'assets/img/testimonials/mary.jpeg' %}" class="testimonial-img" alt="">
+                <h3>Mary Achieng</h3>
+                <h4>Mixologist</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -287,9 +222,9 @@
                   <span>"From the moment we walked in, everything was perfect. The attention to detail, the presentation, and the taste—absolutely exceptional!"</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <img src="{% static 'assets/img/testimonials/samuel.jpg' %}" class="testimonial-img" alt="">
+                <h3>Samuel Kioko</h3>
+                <h4>Chef</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -300,9 +235,9 @@
                   <span> "Mazingira ni tulivu na ya kuvutia, wahudumu ni wakarimu sana, na chakula ni kitamu mno. Napendekeza sana kujaribu sahani za kipekee!"</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <img src="{% static 'assets/img/testimonials/suluhu.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sumaya Ali</h3>
+                <h4>Customer</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -313,9 +248,9 @@
                   <span>"Menyu ya kiubunifu, huduma isiyo na dosari, na mazingira ya kupendeza. Hili ni eneo la lazima kwa wapenzi wa chakula!"</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <img src="{% static 'assets/img/testimonials/joho.jpg' %}" class="testimonial-img" alt="">
+                <h3>Ali Kombo</h3>
+                <h4>Customer</h4>
               </div>
             </div><!-- End testimonial item -->
 
